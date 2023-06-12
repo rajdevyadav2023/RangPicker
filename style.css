@@ -1,0 +1,109 @@
+/* Google Fonts Link  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100%;
+    width: 100%;
+    background-color: #f1f1ff;
+}
+header{
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 1rem;
+    box-shadow: 0px 0px 4px #8080802f, 0px 0px 8px #8080803e;
+}
+header .logo{
+    font-weight: 900;
+}
+.logo .fn{
+    color: darkorange;
+}
+.logo .ln{
+    color: #096;
+}
+/* ---------------------------------  */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+.container{
+    background-color: #fff;
+    width: 60%;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 0px 5px #80808067, 0px 0px 5px #8080804a;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    margin: auto;
+}
+.controls{
+    padding: .5rem;
+    width: 60%;
+    margin: auto;
+    margin-top: 1rem;
+}
+.controls input{
+    height: 40px;
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+}
+.controls button{
+    height: 40px;
+    /* padding: 0 2rem; */
+    width: 28%;
+    font-size: 16px;
+    background-color: darkgreen;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 5px;
+}
+.controls button:hover{
+    background-color: green;
+}
+/* --------------------------------------  */
+footer{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+
+/* RESPONSIVENESS  */
+@media (min-width: 300px) and (max-width: 700px) {
+    .container{
+        width: 90%;
+    }
+    .controls{
+        width: 100%;
+    }
+    .controls input{
+        width: 90%;
+    }
+    .controls button{
+        width: 90%;
+        margin-top: .5rem;
+    }
+}
